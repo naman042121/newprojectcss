@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order</title>
+    <style>
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background-color: rgba(18, 18, 18, 0.637);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+   
+
+
+} 
+header .navbar a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+
+
+header .navbar a:hover{
+    color: yellow;
+   
+}
+header .material-icon i{
+    cursor: pointer;
+   margin-left: 1.5rem;
+   height: 4.5rem;
+   line-height: 4.5rem;
+  
+   text-align: center;
+   font-size: 1.7rem;
+
+}
+header .material-icon i:hover{
+    color: white;
+    transform: rotate(360deg);
+
+}
+header .material-icon #menu{
+    
+}
+
+/* logo ind images */
+ #logo{
+    margin: px px;
+    align-items: center;
+}
+#logo img{
+    height: 120px;
+    margin: px px;
+}
+
+.material-icon{
+    color: yellow;
+    margin: 30px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+.material-icon:hover{
+
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 119px;
+    color: aliceblue;
+    top: 10px;
+    height: 250px;
+    
+}
+
+#Home::before{
+    background-color: rgba(58, 41, 41, 0.579);
+    background: url(../foodie/foodieimages/order.jpg) center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.89;  */
+    /* background-size: cover; */
+   
+
+}
+
+/* order section css start */
+section .order{
+    margin: -222px 20px;
+}
+        .order form{
+            width: 60rem;
+            border-radius: 1.2rem;
+            box-shadow: var(--box-shadow);
+            border: .5rem solid gold;
+            background: rgba(255, 255, 255, 0.26);
+            padding: 1.5rem;
+            margin: -200px auto;
+        }
+        .order form .inputbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        .order form .inputbox .input{
+            width: 50%;
+
+        }
+        .order form .inputbox .input span{
+            /* display: ; */
+            padding: 5rem 0;
+            font-size: 1.0rem;
+            color: black;
+            font-weight: 900;
+        }
+        .order form .inputbox .input input,
+        .order form .inputbox .input textarea{
+            background: white;
+            border-radius: 1rem;
+            padding: .5rem;
+            font-size: 1.2rem;
+            color: black;
+            text-transform: none;
+            margin-bottom: 1rem;
+            width: 90%;
+        }
+        .order form .inputbox .input textarea{
+            height: 15rem;
+            resize: none;
+        }
+
+.order form .btnorder{
+ padding: 8px;
+    margin: 9px 51px;
+    width: 150px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-size: large;
+}
+.order form .btnorder:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    box-shadow: 20px;
+    border-color: brown;
+    border: 2px;
+
+}
+.order .heading{
+    color: yellow;
+    text-align: center;
+    /* margin: -30px; */
+    
+}
+.order .sub-heading{
+    color: yellow;
+    text-align: center;
+    
+}      
+#section #order{
+    margin: 10px -500px;
+} 
+
+        </style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./foodieimages/logo1.png" alt="Foodie">
+            </div>
+        
+     
+
+            <nav class="navbar">
+                <a class="active" href="foodie.html">Home</a>
+                <a href="menufoodie.html">Menu</a>
+                <a href="Book-table.html">Book Table</a>
+                <!-- <a href="#">Order_Now</a> -->
+                <a href="About.html">About us</a>
+             
+            </nav>
+               
+
+    
+    <div class="material-icon">
+        <i class="material-icons" id="menu">menu</i>
+        <i class="material-icons" id="shopping_cart">shopping_cart</i>
+        <i class="material-icons" id="search">search</i>
+       
+        
+        </div>
+    </header>
+
+    <section id="Home">
+
+        <h1 class="h-primary"></h1>
+        <p></p>
+    </section>
+<!-- 
+    ordre section -->
+    <section class="order" id="">
+        <!-- <h3 class="heading">Order Now</h3> -->
+        <!-- <h1 class="sub-heading">Free and Fast</h1> -->
+        <form action="">
+            <div class="inputbox">
+                <div class="input">
+                <span>Your Name</span>
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="input">
+                <span>Your Number</span>
+                <input type="number" placeholder="enter your number">
+            </div>
+            <div class="input">
+                <span>Your Order</span>
+                <input type="text" placeholder="enter food name">
+            </div>
+            <div class="input">
+                <span>Your Additional Food</span>
+                <input type="text" placeholder="extar food">
+            </div>
+            <div class="input">
+                <span>How Much</span>
+                <input type="number" placeholder="how many orders">
+            </div>
+            <div class="input">
+                <span>Date and Time</span>
+                <input type="datetime-local">
+            </div>
+            <div class="input">
+                <span>Your Address</span>
+                <textarea name="" placeholder="enter your address" id="" cols="20" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>Message</span>
+                <textarea name="" placeholder="enter your message" id="" cols="20" rows="10"></textarea>
+            </div>
+           
+        </div>
+        <input type="submit" value="order Now" class="btnorder">
+            
+        </form>
+    </section>
+
+</body>
+</html>

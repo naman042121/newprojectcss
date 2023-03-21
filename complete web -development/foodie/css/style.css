@@ -1,0 +1,459 @@
+/* css reset */
+
+/* css variables */
+/* *{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none: border: none;
+    text-transform: capitalize;
+
+
+} */
+html{
+    /* font-size: 5.2rem; */
+}
+:root{
+    /* --navbar-height: 59px; */
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background-color: rgba(18, 18, 18, 0.637);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+   
+
+
+} 
+header .navbar a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+
+
+header .navbar a:hover{
+    color: yellow;
+   
+}
+header .material-icon i{
+    cursor: pointer;
+   margin-left: 1.5rem;
+   height: 4.5rem;
+   line-height: 4.5rem;
+  
+   text-align: center;
+   font-size: 1.7rem;
+
+}
+header .material-icon i:hover{
+    color: white;
+    transform: rotate(360deg);
+
+}
+header .material-icon #menu{
+    
+}
+
+/* logo ind images */
+ #logo{
+    margin: px px;
+    align-items: center;
+}
+#logo img{
+    height: 120px;
+    margin: px px;
+}
+
+.material-icon{
+    color: yellow;
+    margin: 30px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+.material-icon:hover{
+
+}
+/* Home section editing */
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 119px;
+    color: aliceblue;
+    top: 10px;
+    height: 250px;
+    
+}
+
+#Home::before{
+    background: url(../foodieimages/hero-bg.jpg) center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.89;  */
+    /* background-size: cover; */
+   
+
+}
+.h-services{
+    color: yellow;
+    margin-top: 110px;
+    font-size: 2.0rem;
+}
+/* editing heading and paragraph */
+/* .Home h1{
+        color:rgb(23, 94, 87);
+        text-align: center;
+        font-family: 'Bree Serif', serif;
+    } */
+
+.h-primary{
+    color: yellow;
+    font-size: 1.8rem;
+    padding: 200px 5px;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#Home p{
+    color: yellow;
+    font-family: 'Baloo Bhai', cursive;
+}
+/* services section */
+#services{
+background-image: url(../foodieimages/hero-bg.jpg);
+margin: 10px;
+display: flex;
+}
+.h-services {
+    color: black;
+    margin-top: 5px;
+    font-size: 2.0rem;
+}
+#services .box{
+    border: 3px solid red;   
+    margin: 10px 60px;
+    padding: 5px;
+    height: 200ox;
+    width: 400px;
+    border-radius: 50px;
+    background-color: lightgrey;
+
+}
+#services .box img{
+     height: 200px; 
+    
+    display: block;
+    margin: 10px 70px;
+
+}
+ #service .box .p center{
+    font-size: 2.3rem;
+    font-weight: 10000;
+    color: aqua;
+}
+
+.h-primary{
+    font-size: 35px;
+    padding: 150px;
+   
+}
+.h-secondry{
+    font-size: 10px;
+    padding: 15px;
+    font-weight: 200;
+
+}
+.btn1{
+    background-color: black;
+    padding: 2px 5px;
+    border: 2px solid yellow ;
+    border-radius: 10px;
+    color: yellow;
+    margin: 20px 280px;
+    width: 180px;
+    top: 10px;
+    /* font-family: 'Baloo Bhai', cursive; */
+    cursor: pointer;
+    height: 35px;
+    font-size: larger;
+    
+  
+          box-shadow: none;
+    
+}
+
+.btn1:hover {
+    background-color: rgb(84, 82, 82);
+}
+.center
+{
+    text-align: center;
+}
+/* contect us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+     opacity: 0.9;
+    background: url(../foodieimages/testabo.jpg) no-repeat center center/cover;
+    /* background-color: #261818; */
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding: 0px 180px 0px 0px;
+    
+}
+#contact-box input,
+#contact-bot textarea{
+    width: 250px;
+    padding: 0.4rem;
+    font-size: medium;
+    font-weight: 300;
+    border-radius: 20px;
+    margin: 0px 0px;
+}
+#h4 .contact-heading{
+    color: aliceblue;
+}
+#contact-box label{
+    font-size: 1.2rem;
+    color: rgba(61, 154, 154, 0.89);
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    margin-top: 13px;
+    align-items: center;
+    text-align: center;
+}
+footer .right .material-icons{
+color: aqua;
+/* font-size: x-large; */
+margin: 50px 20px;
+
+} 
+footer .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-box form{
+    width: 20px;
+    padding: 50px;
+
+    /* margin: 10px 500px; */
+}
+#contact-box label{
+    font-size: 1.2rem;
+    color: black;
+
+}
+.btn4{
+    background-color: ghostwhite;
+    padding: 4px 10px;
+    border: 2px solid red ;
+    border-radius: 5px;
+    color: black;
+    margin:  5px 65px;
+    width: 120px;
+    top: 10px;
+    font-family: 'Baloo Bhai', cursive;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+.btn4:hover {
+    background-color: pink;
+}
+.h-contact {
+    color: black;
+    font-family: 'Baloo Bhai', cursive;
+    margin: px px;
+}
+/* .sub-heading{
+    text-align: center;
+    color: blue;
+    font-size: 2.1rem;
+    padding-top: 1.2rem;
+
+}
+.heading{
+    text-align: center;
+    color: blue;
+    font-size: 2.1rem;
+    padding-bottom: 1.2rem;
+    text-transform: uppercase;
+
+} */
+
+.menu{
+    padding: 220px 10px 20px 30px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 20px 40px;
+    /* background-color: blanchedalmond; */
+}
+
+.heading{
+    /* background: white; */
+    color : black;
+    margin-bottom: -35px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Baloo Bhai', cursive;
+  
+
+    
+}
+.material-icons .i{
+    margin: 10px 20px;
+}
+.food-item{
+    background-color: wheat;
+    border-color: beige;
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(10, 6, 6);
+    transition: .2s ease-in-out;
+    margin: 11px 37px;
+    height: 400px;
+}
+.food-item img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+}
+
+.h4{
+    text-align: center;
+    grid-column: 1/-1;
+    
+}
+.details{
+    padding: 10px 20px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+}
+.details-sub>h4{
+    font-size: 20px;
+    font-weight: 800;
+
+}
+.price{
+    text-align: right;
+    font-weight: 1000;
+}
+.details-sub>price{
+    font-weight: bolder;
+}
+.details>p{
+    color: brown;
+    font-size: 1.2rem;
+    line-height: 20px;
+    font-weight: 800;
+    align-self: stretch;
+}
+.details>button{
+    background-color: rgb(169, 51, 51);
+    border: none;
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    width: 180px;
+    cursor: pointer;
+
+
+}
+.btncart{
+    background-color: brown;
+    color: brown;
+    border-radius: 15px;
+
+
+}
+.btn{
+    background-color: brown;
+    color: brown;
+    border-radius: 15px;
+
+}
+.btn:hover {
+background-color: rgb(170, 31, 31);
+}
+textarea{
+    margin: 5px 10px;
+    
+}
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+
+    }
+    header{
+        padding: 2rem 2rem;
+    }
+}
+
+@media (max-width:991px){
+
+    header .material-icon #menu{
+        display: inline-block;
+
+}
+header .navbar{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgb(30, 27, 27);
+    border-top: 1rem solid rgb(15, 13, 13);
+    border-top: 1rem solid rgb(23, 19, 19);
+    padding: 1rem;
+}
+header .navbar a{
+ 
+    padding: 1.2rem;
+    margin: 1.2rem;
+    font-size: 1.2rem;
+  
+}
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+    <Style>
+        body{
+            color: white;
+            height: 100px;
+            padding: 0px;
+            margin: 0px;
+             /* background: url('https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2019/10/MG_3869.jpg?fit=1500%2C1011&ssl=1'); */
+            background: url('./imagesp/hero-bg.jpg');
+            background-repeat: no-repeat; 
+            background-size: cover;
+           
+          
+
+        }  
+
+        .left{
+            display: inline-block;
+            
+            position: absolute;
+            left: 33px;
+            top: 20px;
+        }
+        .left img{
+            width: 120px;
+            border: 5px solid gold;
+        }
+        .mid{
+            display:block;
+            width: 33%;
+            font-weight: 500;
+           
+            margin: 20px auto;
+
+        }
+        .right{
+            position: absolute;
+            width: 250px;
+            right: 40px;
+            top: 20px;
+            display: inline-block;
+            
+        }
+        .navbar{
+            
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: large;
+        }
+        .navbar li a{
+            color: rgb(248, 248, 250);
+            text-decoration: none;
+            padding: 25px 25px;
+        }
+        .navbar li a:hover, .navbar li a:active{
+           text-decoration: underline;
+           color: yellow;
+        }
+
+        .btn{
+            font-family: 'Baloo Bhai', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 10px;
+            border: 2px solid yellow;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        
+    .btn:hover {
+        background-color: rgb(84, 82, 82);
+    }
+
+
+
+        </style>
+</head>
+<body>
+   <header class="header">
+    <!-- left box for logo--> 
+    <div class="left">
+        <img src="https://m.media-amazon.com/images/I/51K9YDu2QZL._SL1204_.jpg" alt="">
+        <ul class="navbar">
+        
+        </div>
+         <!-- mid box for logo--> 
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Book Table</a></li>
+            <li><a href="#">About</a></li>
+    </div>
+     <!-- right box for logo--> 
+     <div class="right">
+    <button class="btn">Login</button>
+    <button class="btn">Register..</button>
+
+    </div>
+</header>
+</body>
+</html>

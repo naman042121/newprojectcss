@@ -1,0 +1,702 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+section{
+    padding:2rem ;
+ }
+
+/*.btn1{
+    display: inline-block;
+    padding: .8rem 2rem;
+    border: 5px solid orange;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden ;
+    z-index: 0;
+    margin-top: 1rem;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background:var(#241e0a);
+    transition: .3s linear;
+    z-index: -1;
+}
+.btn1:hover::before{
+    width: 100%;
+    left:0;
+} */
+
+nav{
+    background: lightskyblue;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 .5rem 2rem rgb(91, 82, 82);
+    position: fixed;
+    z-index: 10;
+}
+/* nav i{
+    display: none;
+} */
+.logo{
+    color: black;
+    /* border: 2px solid pink; */
+    
+    font-size: 2.5rem;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bolder;
+    
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 67px;
+    margin: 0 5px;
+    color: black;
+    border-color: brown;
+    border: 2px;
+    display: inline-block;
+    border: 7px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 7px 3px;
+    text-transform: uppercase;
+    font-weight: bolder ;
+}
+nav ul li a{
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    border: 3px;
+    border-color: black;
+    font-weight: bolder;
+
+    text-transform: uppercase;
+    cursor: pointer;
+}
+nav ul li a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+    
+
+}
+/* a.active, a:hover{
+    background: rgb(132, 132, 155) ;
+    transition: 5s;
+} */
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+#check{
+    display: none;
+
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background:url(./foodie/foodieimages/pro2back.jpg)  no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   height: 30%;
+   border: 5px solid yellow;
+   
+
+
+}
+.home .content{
+    flex:1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .image{
+    flex:1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+    padding: 1rem;
+    animation: float 3s linear infinite ;
+    align-items: flex;
+}
+.heading{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: .5rem;
+    padding-top: 20px;
+    color: lawngreen;
+}
+.heading span{
+    color: red;
+}
+/* speciaalty section start */
+.speciality .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.speciality .box-container .box{
+    flex: 1 1 20rem;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 0 .5rem 1rem rgb(91, 82, 82);
+     border: 1px solid rgb(116, 111, 111);
+     cursor: pointer;
+     border-radius: 10px;
+
+}
+.speciality .box-container .image{
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    position: absolute;
+    top:-100%; left:0; 
+}
+.speciality .box-container .box .content{
+    text-align: center;
+    background: white;
+    padding: 2rem;
+}
+.speciality .box-container .box .content img{
+    margin: 1.5rem 0;
+    height: 100px;
+    /* width: 100x; */
+
+}
+.speciality .box-container .box .content h3{
+    font-size: 1.2rem;
+    color: #241e0a;
+}
+.speciality .box-container .box .content p{
+    font-size: 1rem;
+    color: black;
+    padding:2rem 0;
+    font-weight: 800;
+
+}
+.speciality .box-container .box:hover .image{
+        top:0;
+
+}
+.speciality .box-container .box:hover .content{
+    transform: translateY(100%);
+}
+/* popular section start */
+.popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.2rem;
+
+}
+.popular .box-container .box{
+    padding: 5px;
+    background: white;
+    box-shadow: 0 .5rem 1rem  rgb(102, 98, 98);
+    border: 2px solid rgb(42, 36, 36);
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 20rem;
+
+}
+.popular .box-container .box img{
+    height: 20rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+
+}
+/* .popular .box-container .box .price1{
+position: absolute;
+top: 10px;
+left: 5px;
+background: rgb(177, 105, 23);
+color: white;
+font-size: 10rem;
+padding: 1rem 2rem;
+border-radius: .5rem;
+} */
+.popular .box-container .box .price{
+    color: white;
+    font-size: x-large;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(172, 29, 29);
+    position: absolute;
+    /* top:3rem; */
+    /* left: 3rem; */
+    font-weight: 600;
+    
+    
+}
+.popular .box-container .box h3{
+    color: #241e0a;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.popular .box-container .box .stars i{
+    color: gold;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+
+}
+
+/* step section */
+.step{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 1rem 1rem;
+}
+.step .box{
+    flex:1 1 5px;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(207, 183, 46, 0.7);
+    border-radius: 50px;
+
+}
+.step .box img{
+    border: 3px solid rgb(62, 57, 57);
+    border-radius: 50px;
+    box-shadow: 0 .5rem 1rem rgb(90, 82, 82);
+    width: 100%;
+    height: 250px;
+
+}
+.step .box h3{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+/* .heading-services{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: .5rem;
+    padding-top: 20px;
+    color: lawngreen;
+}
+.heading-services span{
+    color: red;
+} */
+
+/* gallary section start */
+.gallary .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.gallary .box-container .box{
+    height: 15rem;
+    flex: 1 1 20rem;
+    border: 3px solid wheat;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem black;
+    position: relative;
+    overflow: hidden;
+}
+.gallary .box-container .box img{
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+.gallary .box-container .box .content{
+    position: absolute;
+    top: -100%; left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.514);
+    padding: 2rem;
+    padding-top: 5rem;
+    text-align: center;
+}
+.gallary .box-container .box .content h3{
+    font-size: 1rem;
+    color: black;
+}
+.gallary .box-container .box .content p{
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem 0;
+}
+/* .gallary .box-container .box:hover .content{
+
+    top:0;
+} */
+/* gallary btn */
+.btn2{
+    display: inline-block;
+    padding: 0px 10px;
+    border: 2px solid orange;
+    
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden ;
+    z-index: 0;
+    margin-top: 12.5rem;
+    color: rgb(33, 29, 29);
+    background-color: #d8e60f6b;
+}
+.btn2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background:var(#241e0a);
+    transition: .3s linear;
+    z-index: -1;
+
+}
+.btn2:hover::before{
+    width: 100%;
+    left:0;
+}
+.btn2:hover{
+    color: yellow;
+    background-color: rgb(92, 86, 86);
+}
+
+/* review section */
+
+.review .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.review .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border: 3px solid rgb(75, 69, 69);
+    box-shadow: 0 .5rem 1rem black;
+    border-radius: 50px;
+    flex: 1 1 50px;
+    background-color: rgb(195, 200, 204);
+    margin-top: 5rem;
+}
+.review .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border: 3px solid rgb(254, 254, 250);
+    border-radius: 70px;
+    object-fit: cover;
+    margin-top: -5rem;
+
+
+}
+.review .box-container .box  h3{
+    font-size: 2rem;
+    color: white;
+    padding: 2rem 0;
+}
+/* order section start */
+.order .row{
+    padding: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 1.5rem;
+    background-color: white;
+    box-shadow: 0 .5rem 1rem black;
+    border-radius: 2rem;
+}
+.order .row .image{
+    flex: 1 1 2rem;
+
+}
+.order .row .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.order .row form{
+    flex: 1 1 30rem;
+    padding: 20px;
+
+}
+.order .row form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.order .row form .inputbox input, .order .row form textarea{
+    padding:  15px;
+    margin: 1rem 0;
+    font-size: 15px;
+    color: black;
+    text-transform: none;
+    border: 2px solid rgb(63, 63, 58);
+    border-radius: 10px;
+    width: 49%;
+
+
+}
+.order .row form textarea{
+    width: 100%;
+    resize: none;
+    height: 12rem;
+}
+/* footer start */
+.footer{
+    text-align: center;
+}
+.footer .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap:2rem;
+} 
+.footer .icons-container .icons{
+    text-align: center;
+    padding: 3rem 2rem;
+
+}
+.footer .icons-container .icon i{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background: peru;
+    color: white;
+    margin-bottom: 1rem;
+    line-height: 5rem;
+    font-size: 2rem;
+}
+.footer .icons-container .icon h3{
+    font-size: 2rem;
+    color: rgb(197, 0, 0);
+    padding: 1rem 0;
+}
+.footer .icons-container .icon p{
+    line-height: 1.8rem;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: none;
+    font-weight: bolder;
+}
+.footer .share{
+    margin: 2rem 0;
+   
+}
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    color: white;
+    background: blueviolet;
+    margin: 0 .3rem;
+    font-size: 2rem;
+    border-radius: 15px;
+}
+.footer .share a:hover{
+    background: peru;
+}
+.footer .credit{
+        font-size: 2rem;
+        padding-top: 2rem;
+        margin-top: 2rem;
+        border-top: var(--border);
+        color: #241e0a;
+        font-weight: 600;
+}
+.footer .credit span{
+    color: peru;
+    font-weight: 900;
+}
+
+
+
+
+/*  main button */
+.btn1{
+    display: inline-block;
+    padding: 3px 3px;
+    border: 4px solid orange;
+    
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden ;
+    z-index: 0;
+    margin-top: 1rem;
+}
+.btn1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background:var(#241e0a);
+    transition: .3s linear;
+    z-index: -1;
+    color: aqua;
+}
+.btn1:hover::before{
+    width: 100%;
+    left:0;
+}
+.btn1:hover{
+    color: yellow;
+    background-color: rgb(92, 86, 86);
+}
+
+
+
+
+
+
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+       
+        
+    }
+    50%{
+        transform: translateY(3rem);
+
+    }
+}
+.home .content .h3{
+    font-size: 5rem;
+    color: rgb(62, 53, 53);
+}
+.home .content p{
+    font-size: 1.7rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+@media (max-width: 800px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
+}
+@media(max-width: 850px){
+.checkbtn{
+    display: block ;
+
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(4, 68, 65);  
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+}
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+
+}
+a:hover,a.active{
+    background: none;
+    color: brown;
+}
+#check:checked ~ ul{
+    left: 0;
+
+}
+.order .row form .inputbox input{
+    width: 100%;
+}
+.logo{
+    padding: 0px;
+}
+
+} 
+
+  /* @media(max-width: 700px){
+    .checkbtn{
+        display: block ;
+    
+    }
+    .logo{
+    color: black;
+    /* border: 2px solid pink; */
+/*     
+    font-size: 2.5rem;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bolder;
+
+}
+    ul{
+        position: fixed;
+        width: 50%;
+        height: 50vh;
+        background: rgb(4, 68, 65);  
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 5px;
+    
+    }
+    a:hover,a.active{
+        background: none;
+        color: brown;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    
+    }
+    .order .row form .inputbox input{
+        width: 100%;
+    }    
+}   */ 

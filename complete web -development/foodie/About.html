@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background-color: rgba(18, 18, 18, 0.637);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+   
+
+
+} 
+header .navbar a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+
+
+header .navbar a:hover{
+    color: yellow;
+   
+}
+header .material-icon i{
+    cursor: pointer;
+   margin-left: 1.5rem;
+   height: 4.5rem;
+   line-height: 4.5rem;
+  
+   text-align: center;
+   font-size: 1.7rem;
+
+}
+header .material-icon i:hover{
+    color: white;
+    transform: rotate(360deg);
+
+}
+header .material-icon #menu{
+    
+}
+
+/* logo ind images */
+ #logo{
+    margin: px px;
+    align-items: center;
+}
+#logo img{
+    height: 120px;
+    margin: px px;
+}
+
+.material-icon{
+    color: yellow;
+    margin: 30px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+.material-icon:hover{
+
+}
+#Home{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 119px;
+    color: aliceblue;
+    top: 10px;
+    height: 250px;
+    
+}
+
+#Home::before{
+    background: url(../foodie/foodieimages/different-vegetables-textile-bag-beige.jpg) center/cover;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.89;  */
+    /* background-size: cover; */
+   
+
+}
+
+footer{
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    margin-top: 300px;
+    text-align: center;
+}
+footer .right .material-icons{
+color: aqua;
+/* font-size: x-large; */
+margin: 50px 20px;
+text-align: center;
+} 
+.center
+{
+    text-align: center;
+}
+
+.order .heading{
+    color: black;
+    /* text-align: center; */
+    /* margin: 100px 20px; */
+    font-size: 1.3rem;
+    font-weight: bolder;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+/* .order .sub-heading{
+    color: black;
+    text-align: center;
+    margin: 90px 400px;
+    font-size: 2.5rem;
+    background-color: rgb(100, 97, 94);
+    border-radius: 20px;
+}       */
+
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="./foodieimages/logo1.png" alt="Foodie">
+            </div>
+        
+     
+
+            <nav class="navbar">
+                <a class="active" href="foodie.html">Home</a>
+                <a href="menufoodie.html">Menu</a>
+                <a href="Book-table.html">Book Table</a>
+                <!-- <a href="#">Order_Now</a> -->
+                <a href="About.html">About us</a>
+             
+            </nav>
+               
+
+    
+    <div class="material-icon">
+        <i class="material-icons" id="menu">menu</i>
+        <i class="material-icons" id="shopping_cart">shopping_cart</i>
+        <i class="material-icons" id="search">search</i>
+       
+        
+        </div>
+    </header>
+
+    <section id="Home">
+
+        <h1 class="h-primary"></h1>
+        <p></p>
+    </section>
+
+    <!-- ordre section -->
+    <section class="order" id="order">
+        <h3 class="heading"><p>
+            “Thoughts aren't real; there's a huge difference between eating the words 
+            </p></n><p>on a menu and eating the actual food.”</p></h3>
+        <h1 class="sub-heading"><p>Address: Smriti Nagar Bhilai</p></n>
+            <p> <div class="right">
+                <i class="material-icons" id="gmail">gmail</i> Gmail: Foodie@gmail.com </n>
+                <i class="material-icons" id="call">call</i> 0788-7878787979 </n>
+                <i class="material-icons" id="sms">sms</i>  7470676074
+    
+    
+    
+            </div>
+     </p></h1>
+        <footer>
+            <div class="center">
+                copyright &copy; WWW.Foodie.com All Right Reserved|
+            </div>
+            <div class="right">
+                <i class="material-icons" id="gmail">gmail</i> Gmail: Foodie@gmail.com    </n>
+                <i class="material-icons" id="call">call</i> 0788-7878787979 </n>
+                <i class="material-icons" id="sms">sms</i> 7470676074
+    
+    
+    
+            </div>
+            <div class="left">
+          
+    
+            </div>
+        </footer>
+     
+    
+</body>
+</html>

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #Home{
+    background: url(../foodie/foodieimages/hero-bg.jpg) center/cover;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 119px;
+    color: black;
+    top: 10px;
+    height: 1900px;
+    width: 100%;
+    
+}
+
+#Home::before{
+    /* background: url(../foodie/foodieimages/hero-bg.jpg) center/cover;
+     */
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    /* opacity:0.89;  */
+    /* background-size: cover; */
+    
+ 
+}
+/* #navbar{
+            display:  flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+            height: 150px;
+            background-color: rgba(0, 0, 0, 0.845);
+          
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(2px);
+            
+        }
+        #navbar .btn{
+        color: white;
+        margin: 275px;
+        
+        
+        }
+      
+        #logo{
+            margin: 30px 20px;
+        }
+        #logo img{
+            height: 150px;
+            margin: px px;
+        }
+       
+        
+        #navbar ul{
+            display: flex;
+        }
+        #navbar::before{
+            content: "";
+        
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 600px;
+            width:  100%;
+            z-index: -1;
+            opacity: 0.4;
+        
+        }
+        #navbar ul li{
+          
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 20px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover{
+            color: gold;
+          
+          cursor: pointer;
+        }
+
+    *{
+            
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    } */
+    header{
+    position: fixed;
+    top:0; left: 0; right: 0;
+    background-color: rgba(18, 18, 18, 0.637);
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+   
+
+
+} 
+header .navbar a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 2rem 1.5rem;
+    text-decoration: none;
+    line-height: 3rem;
+}
+
+
+
+header .navbar a:hover{
+    color: yellow;
+   
+}
+header .material-icon i{
+    cursor: pointer;
+   margin-left: 1.5rem;
+   height: 4.5rem;
+   line-height: 4.5rem;
+  
+   text-align: center;
+   font-size: 1.7rem;
+
+}
+header .material-icon i:hover{
+    color: white;
+    transform: rotate(360deg);
+
+}
+header .material-icon #menu{
+    
+}
+
+/* logo ind images */
+ #logo{
+    margin: px px;
+    align-items: center;
+}
+#logo img{
+    height: 120px;
+    margin: px px;
+}
+
+.material-icon{
+    color: yellow;
+    margin: 30px;
+    border-radius: 20px;
+    font-weight: 900;
+}
+.material-icon:hover{
+
+}
+
+    #body{
+        background-color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    .menu{
+        padding: 40px 209px 30px 1px;
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+        grid-gap: 20px 40px;
+    }
+    .heading{
+        /* background: white; */
+        color : yellow;
+        margin-bottom: 25px;
+        padding: 30px 0;
+        grid-column: 1/-1;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5rem;
+        
+    }
+    .food-item{
+        background-color: wheat;
+        border-color: beige;
+        display: grid;
+        position: relative;
+        grid-template-rows: auto 1fr;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgb(10, 6, 6);
+        transition: .2s ease-in-out;
+        margin: 11px 37px;
+    }
+    .food-item img{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+        cursor: pointer;
+    }
+    .h4{
+        text-align: center;
+        grid-column: 1/-1;
+        
+    }
+    .details{
+        padding: 10px 20px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-row-gap: 20px;
+    }
+    .details-sub>h4{
+        font-size: 20px;
+        font-weight: 800;
+
+    }
+    .price{
+        text-align: right;
+        font-weight: 1000;
+    }
+    .details-sub>price{
+        font-weight: bolder;
+    }
+    .details>p{
+        color: aqua;
+        font-size: 15px;
+        line-height: 10px;
+        font-weight: 400;
+        align-self: stretch;
+    }
+    .details>button{
+        background-color: rgb(169, 51, 51);
+        border: none;
+        color: #f3f3f3;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 15px;
+        width: 180px;
+        cursor: pointer;
+
+
+    }
+    .btn{
+        background-color: brown;
+        color: brown;
+        border-radius: 15px;
+
+    }
+    .btn:hover {
+    background-color: rgb(170, 31, 31);
+}
+footer{
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer{
+    background-color: black;
+    color: yellow;
+    padding: 10px 20px;
+    margin-top: 400px;
+    width: 100%;
+}
+footer .right .material-icons{
+color: aqua;
+/* font-size: x-large; */
+margin: 50px 20px;
+} 
+.center
+{
+    text-align: center;
+}
+
+    </style>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <!-- <nav id="navbar">
+        <div id="logo">
+            <img src="./foodieimages/logo1.png" alt="Foodie">
+            </div>
+            <ul>
+                <li class="item"><a href="foodie.html">Home</a></li>
+                <li class="item"><a href="#">Menu</a></li>
+                <li class="item"><a href="#">Order</a></li>
+                <li class="item"><a href="#">Book Table</a></li>
+                <li class="item"><a href="#">Contact_us</a></li>
+                </ul>
+             
+    </div>
+    </nav> -->
+    <header>
+        <div id="logo">
+            <img src="./foodieimages/logo1.png" alt="Foodie">
+            </div>
+        
+     
+
+            <nav class="navbar">
+                <a class="active" href="foodie.html">Home</a>
+                <a href="menufoodie.html">Menu</a>
+                <a href="Book-table.html">Book Table</a>
+                <!-- <a href="#">Order_Now</a> -->
+                <a href="About.html">About us</a>
+             
+            </nav>
+               
+
+    
+    <div class="material-icon">
+        <i class="material-icons" id="menu">menu</i>
+        <i class="material-icons" id="shopping_cart">shopping_cart</i>
+        <i class="material-icons" id="search">search</i>
+       
+        
+        </div>
+    </header>
+
+
+    <section id="Home">
+    <div class="menu">
+        <div class="heading">
+            <h1> Our menu</h1>
+        
+        </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu1.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Pizza</h4>
+                <h4 class="price">299₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu2.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>burger</h4>
+                <h4 class="price">110₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu3.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>French-Fried</h4>
+                <h4 class="price">80₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu4.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Noodels</h4>
+                <h4 class="price">129₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu5.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Munchurian</h4>
+                <h4 class="price">149₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu6.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Fried-Rice</h4>
+                <h4 class="price">159₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu7.jpg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Cold Cofee</h4>
+                <h4 class="price">129₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu8.webp" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Mojito</h4>
+                <h4 class="price">89₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    <div class="food-item">
+        <img src="../foodie/foodieimages/menu9.jpeg" alt="">
+        <div class="details">
+            <div class="details-sub">
+                <h4>Cake</h4>
+                <h4 class="price">119₹</h4>
+            </div>
+            <p></p>
+            <button class="btn">Add cart</button>
+        </div>
+    </div>
+    
+    
+    </div>
+    
+ 
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy; WWW.Foodie.com All Right Reserved|
+        </div>
+        <div class="right">
+            <i class="material-icons" id="gmail">gmail</i> Gmail: Foodie@gmail.com    </n>
+            <i class="material-icons" id="call">call</i> 0788-7878787979 </n>
+            <i class="material-icons" id="sms">sms</i> 7470676074
+
+
+
+        </div>
+        <div class="left">
+      
+
+        </div>
+    </footer>
+  
+    
+        </body>
+</html>
