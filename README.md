@@ -1,3 +1,0 @@
-# firstproject
-# firstproject
-# newprojectcss
